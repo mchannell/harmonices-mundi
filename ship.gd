@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
-const SPEED = 250
+const ACCELERATION = 500
+const MAX_SPEED = 10000
 const TURN_SPEED = 4
 
 
@@ -16,6 +17,11 @@ func _process(delta: float) -> void:
 	if (Input.is_action_pressed("turn_left")):
 		rotate(-TURN_SPEED * delta)
 	if (Input.is_action_pressed("move_forward")):
-		move_and_collide(Vector2(0,-SPEED * delta).rotated(rotation))
+		velocity += Vector2(0,-ACCELERATION * delta).rotated(rotation)
 	if (Input.is_action_pressed("move_back")):
-		move_and_collide(Vector2(0,SPEED * delta/2).rotated(rotation))
+		velocity += Vector2(0,ACCELERATION * delta/2).rotated(rotation)
+	if velocity.length() > MAX_SPEED*delta:
+		velocity = velocity.normalized()*MAX_SPEED*delta
+	if (!Input.is_action_pressed("move_back") or !Input.is_action_pressed("move_forward")):
+		velocity = velocity.lerp(Vector2.ZERO,.03)
+	move_and_slide()
