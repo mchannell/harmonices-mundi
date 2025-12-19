@@ -1,3 +1,12 @@
-[gd_scene format=3 uid="uid://cdvb40fbw4h8x"]
+[gd_scene load_steps=3 format=3 uid="uid://cdvb40fbw4h8x"]
+
+[ext_resource type="PackedScene" uid="uid://bj4t65uqxhpet" path="res://ship.tscn" id="1_gojnm"]
+[ext_resource type="PackedScene" uid="uid://hmw5pgdasqhi" path="res://planet.tscn" id="2_1c2mv"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Ship" parent="." instance=ExtResource("1_gojnm")]
+position = Vector2(-457, -50)
+
+[node name="Planet" parent="." instance=ExtResource("2_1c2mv")]
+position = Vector2(-232, -48)

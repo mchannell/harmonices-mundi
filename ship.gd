@@ -18,4 +18,4 @@ func _process(delta: float) -> void:
 	if (Input.is_action_pressed("move_forward")):
 		move_and_collide(Vector2(0,-SPEED * delta).rotated(rotation))
 	if (Input.is_action_pressed("move_back")):
-		move_and_collide(Vector2(0,SPEED * delta/2)).rotated(rotation)
+		move_and_collide(Vector2(0,SPEED * delta/2).rotated(rotation))

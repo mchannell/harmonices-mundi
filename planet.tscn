@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://hmw5pgdasqhi"]
+
+[ext_resource type="Script" uid="uid://ll3loo6416bg" path="res://planet.gd" id="1_1odxm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1odxm"]
+
+[node name="Planet" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+script = ExtResource("1_1odxm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("CircleShape2D_1odxm")
