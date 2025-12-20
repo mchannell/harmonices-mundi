@@ -12,6 +12,7 @@ func _draw() -> void:
 
 
 func _process(delta: float) -> void:
+	#print_debug(global_position)
 	if (Input.is_action_pressed("turn_right")):
 		rotate(TURN_SPEED * delta)
 	if (Input.is_action_pressed("turn_left")):
