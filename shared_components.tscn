@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cu3ccv4tacph0"]
+
+[ext_resource type="Script" uid="uid://7ppsuy1t5fkv" path="res://shared_components.gd" id="1_vsg4q"]
+
+[sub_resource type="AudioStream" id="AudioStream_yl1wc"]
+
+[node name="SharedComponents" type="Node2D"]
+script = ExtResource("1_vsg4q")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStream_yl1wc")

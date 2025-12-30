@@ -14,7 +14,11 @@ func _ready() -> void:
 
 func create_string(planet1, planet2) -> void:
 	var new_string = MusicString.new()
-	new_string.root = planet1.root
+	print_debug(planet1.root)
+	print_debug(planet2.root)
+	print_debug(((2*planet1.root - planet2.root + 12) % 12))
+	new_string.root = (2*planet1.root - planet2.root + 12) % 12
+	print_debug("here good ", new_string.root)
 	new_string.planet1 = planet1
 	new_string.planet2 = planet2
 	get_parent().add_child.call_deferred(new_string)

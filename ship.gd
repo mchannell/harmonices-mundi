@@ -4,12 +4,13 @@ const ACCELERATION = 500
 const MAX_SPEED = 10000
 const TURN_SPEED = 4
 
+func _ready() -> void:
+	add_to_group("Ship")
 
 func _draw() -> void:
 	var triangle: PackedVector2Array = PackedVector2Array([Vector2(0,-16),Vector2(9,11),Vector2(-9,11)])
-	draw_colored_polygon(triangle, Color.BLUE)
+	draw_colored_polygon(triangle, Color.BLACK)
 	get_node("CollisionPolygon2D").polygon = triangle
-
 
 func _process(delta: float) -> void:
 	#print_debug(global_position)

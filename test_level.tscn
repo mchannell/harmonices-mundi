@@ -1,27 +1,86 @@
-[gd_scene load_steps=4 format=3 uid="uid://cdvb40fbw4h8x"]
+[gd_scene load_steps=5 format=3 uid="uid://cdvb40fbw4h8x"]
 
 [ext_resource type="PackedScene" uid="uid://bj4t65uqxhpet" path="res://ship.tscn" id="1_gojnm"]
 [ext_resource type="PackedScene" uid="uid://hmw5pgdasqhi" path="res://planet.tscn" id="2_1c2mv"]
 [ext_resource type="PackedScene" uid="uid://c2wtydfkmjrf4" path="res://string_orchestrator.tscn" id="3_f7g2b"]
+[ext_resource type="PackedScene" uid="uid://cu3ccv4tacph0" path="res://shared_components.tscn" id="4_4ptq8"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Planet" parent="." instance=ExtResource("2_1c2mv")]
-position = Vector2(252, 165)
+position = Vector2(736, 96)
 radius = 64
 atmosphere_radius = 128
+root = 4
 
 [node name="Planet2" parent="." instance=ExtResource("2_1c2mv")]
-position = Vector2(345, 358)
+position = Vector2(64, 64)
 radius = 64
 atmosphere_radius = 128
 
 [node name="Planet3" parent="." instance=ExtResource("2_1c2mv")]
-position = Vector2(109, 324)
+position = Vector2(288, 64)
 radius = 64
 atmosphere_radius = 128
+root = 1
+
+[node name="Planet4" parent="." instance=ExtResource("2_1c2mv")]
+position = Vector2(416, 64)
+radius = 32
+atmosphere_radius = 64
+root = 2
+
+[node name="Planet5" parent="." instance=ExtResource("2_1c2mv")]
+position = Vector2(544, 64)
+radius = 32
+atmosphere_radius = 64
+root = 3
+
+[node name="Planet6" parent="." instance=ExtResource("2_1c2mv")]
+position = Vector2(128, 320)
+radius = 32
+atmosphere_radius = 64
+root = 5
+
+[node name="Planet7" parent="." instance=ExtResource("2_1c2mv")]
+position = Vector2(416, 192)
+radius = 32
+atmosphere_radius = 64
+root = 11
+
+[node name="Planet8" parent="." instance=ExtResource("2_1c2mv")]
+position = Vector2(608, 256)
+radius = 32
+atmosphere_radius = 64
+root = 10
+
+[node name="Planet9" parent="." instance=ExtResource("2_1c2mv")]
+position = Vector2(864, 192)
+radius = 32
+atmosphere_radius = 64
+root = 9
+
+[node name="Planet10" parent="." instance=ExtResource("2_1c2mv")]
+position = Vector2(512, 160)
+radius = 32
+atmosphere_radius = 64
+root = 8
+
+[node name="Planet11" parent="." instance=ExtResource("2_1c2mv")]
+position = Vector2(288, 288)
+radius = 32
+atmosphere_radius = 64
+root = 7
+
+[node name="Planet12" parent="." instance=ExtResource("2_1c2mv")]
+position = Vector2(128, 256)
+radius = 32
+atmosphere_radius = 64
+root = 6
 
 [node name="StringOrchestrator" parent="." instance=ExtResource("3_f7g2b")]
 
 [node name="Ship" parent="." instance=ExtResource("1_gojnm")]
 position = Vector2(574, 322)
+
+[node name="SharedComponents" parent="." instance=ExtResource("4_4ptq8")]
