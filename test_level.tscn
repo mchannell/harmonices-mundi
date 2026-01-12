@@ -8,75 +8,90 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Planet" parent="." instance=ExtResource("2_1c2mv")]
-position = Vector2(736, 96)
+position = Vector2(336, 246)
 radius = 64
 atmosphere_radius = 128
 root = 4
+activation_sequence = Array[int]([5])
 
 [node name="Planet2" parent="." instance=ExtResource("2_1c2mv")]
-position = Vector2(64, 64)
+position = Vector2(546, 404)
 radius = 64
 atmosphere_radius = 128
+activation_sequence = Array[int]([8])
 
 [node name="Planet3" parent="." instance=ExtResource("2_1c2mv")]
-position = Vector2(288, 64)
+position = Vector2(544, 160)
 radius = 64
 atmosphere_radius = 128
 root = 1
+is_active = true
+activation_sequence = Array[int]([4])
 
 [node name="Planet4" parent="." instance=ExtResource("2_1c2mv")]
 position = Vector2(416, 64)
 radius = 32
 atmosphere_radius = 64
 root = 2
+activation_sequence = null
 
 [node name="Planet5" parent="." instance=ExtResource("2_1c2mv")]
-position = Vector2(544, 64)
+position = Vector2(533, 23)
 radius = 32
 atmosphere_radius = 64
 root = 3
+activation_sequence = null
 
 [node name="Planet6" parent="." instance=ExtResource("2_1c2mv")]
-position = Vector2(128, 320)
+position = Vector2(151, 282)
 radius = 32
 atmosphere_radius = 64
 root = 5
+activation_sequence = null
 
 [node name="Planet7" parent="." instance=ExtResource("2_1c2mv")]
-position = Vector2(416, 192)
+position = Vector2(698, 72)
 radius = 32
 atmosphere_radius = 64
 root = 11
+activation_sequence = null
 
 [node name="Planet8" parent="." instance=ExtResource("2_1c2mv")]
-position = Vector2(608, 256)
+position = Vector2(394, 415)
 radius = 32
 atmosphere_radius = 64
 root = 10
+is_active = true
+activation_sequence = Array[int]([0])
 
 [node name="Planet9" parent="." instance=ExtResource("2_1c2mv")]
-position = Vector2(864, 192)
+position = Vector2(284, 75)
 radius = 32
 atmosphere_radius = 64
 root = 9
+activation_sequence = null
 
 [node name="Planet10" parent="." instance=ExtResource("2_1c2mv")]
-position = Vector2(512, 160)
+position = Vector2(171, 161)
 radius = 32
 atmosphere_radius = 64
 root = 8
+is_active = true
+activation_sequence = null
 
 [node name="Planet11" parent="." instance=ExtResource("2_1c2mv")]
-position = Vector2(288, 288)
+position = Vector2(273, 417)
 radius = 32
 atmosphere_radius = 64
 root = 7
+activation_sequence = null
 
 [node name="Planet12" parent="." instance=ExtResource("2_1c2mv")]
-position = Vector2(128, 256)
+position = Vector2(704, 224)
 radius = 32
 atmosphere_radius = 64
 root = 6
+activation_sequence = null
 
 [node name="StringOrchestrator" parent="." instance=ExtResource("3_f7g2b")]
 

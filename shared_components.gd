@@ -5,17 +5,17 @@ var audio_stream_player
 
 func _ready():
 	audio_stream_player = get_node("AudioStreamPlayer")
-	stream_array.append(load("res://Sounds/Af_pure.wav"))
+	stream_array.append(load("res://Sounds/Ab_pure.wav"))
 	stream_array.append(load("res://Sounds/A_pure.wav"))
-	stream_array.append(load("res://Sounds/Bf_pure.wav"))
+	stream_array.append(load("res://Sounds/Bb_pure.wav"))
 	stream_array.append(load("res://Sounds/B_pure.wav"))
 	stream_array.append(load("res://Sounds/C_pure.wav"))
-	stream_array.append(load("res://Sounds/Df_pure.wav"))
+	stream_array.append(load("res://Sounds/Db_pure.wav"))
 	stream_array.append(load("res://Sounds/D_pure.wav"))
-	stream_array.append(load("res://Sounds/Ef_pure.wav"))
+	stream_array.append(load("res://Sounds/Eb_pure.wav"))
 	stream_array.append(load("res://Sounds/E_pure.wav"))
 	stream_array.append(load("res://Sounds/F_pure.wav"))
-	stream_array.append(load("res://Sounds/Gf_pure.wav"))
+	stream_array.append(load("res://Sounds/Gb_pure.wav"))
 	stream_array.append(load("res://Sounds/G_pure.wav"))
 
 func _input(event: InputEvent) -> void:

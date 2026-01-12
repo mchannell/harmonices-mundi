@@ -2,14 +2,15 @@ extends CharacterBody2D
 
 const ACCELERATION = 500
 const MAX_SPEED = 10000
-const TURN_SPEED = 4
+const TURN_SPEED = 3
 
 func _ready() -> void:
+	z_index = 1
 	add_to_group("Ship")
 
 func _draw() -> void:
 	var triangle: PackedVector2Array = PackedVector2Array([Vector2(0,-16),Vector2(9,11),Vector2(-9,11)])
-	draw_colored_polygon(triangle, Color.BLACK)
+	draw_colored_polygon(triangle, Color.DARK_GRAY)
 	get_node("CollisionPolygon2D").polygon = triangle
 
 func _process(delta: float) -> void:

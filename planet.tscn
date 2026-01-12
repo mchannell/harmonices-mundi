@@ -3,10 +3,13 @@
 [ext_resource type="Script" uid="uid://ll3loo6416bg" path="res://planet.gd" id="1_1odxm"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1odxm"]
-radius = 32.0
+radius = 0.0
 
 [node name="Planet" type="Node2D"]
+z_index = 1
 script = ExtResource("1_1odxm")
+is_active = null
+activation_sequence = null
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 

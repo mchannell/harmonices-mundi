@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://bavar2tq5vm3w"]
+
+[ext_resource type="PackedScene" uid="uid://hmw5pgdasqhi" path="res://planet.tscn" id="1_ipipv"]
+[ext_resource type="PackedScene" uid="uid://c2wtydfkmjrf4" path="res://string_orchestrator.tscn" id="2_cko5g"]
+[ext_resource type="PackedScene" uid="uid://bj4t65uqxhpet" path="res://ship.tscn" id="3_hgxc0"]
+[ext_resource type="PackedScene" uid="uid://cu3ccv4tacph0" path="res://shared_components.tscn" id="4_6ra2q"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Planet3" parent="." instance=ExtResource("1_ipipv")]
+position = Vector2(654, 99)
+radius = 128
+atmosphere_radius = 256
+root = 1
+is_active = null
+activation_sequence = null
+
+[node name="Planet22" parent="." instance=ExtResource("1_ipipv")]
+position = Vector2(215, 348)
+radius = 128
+atmosphere_radius = 256
+root = 10
+is_active = null
+activation_sequence = null
+
+[node name="Planet13" parent="." instance=ExtResource("1_ipipv")]
+position = Vector2(652, 609)
+radius = 128
+atmosphere_radius = 256
+root = 4
+is_active = null
+activation_sequence = null
+
+[node name="Planet20" parent="." instance=ExtResource("1_ipipv")]
+position = Vector2(498, 357)
+radius = 64
+atmosphere_radius = 128
+root = 7
+is_active = null
+activation_sequence = null
+
+[node name="StringOrchestrator" parent="." instance=ExtResource("2_cko5g")]
+position = Vector2(2, 0)
+
+[node name="Ship" parent="." instance=ExtResource("3_hgxc0")]
+position = Vector2(576, 322)
+
+[node name="SharedComponents" parent="." instance=ExtResource("4_6ra2q")]
+position = Vector2(2, 0)
