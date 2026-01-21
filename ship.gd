@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-const ACCELERATION = 500
-const MAX_SPEED = 10000
+const ACCELERATION = 1000
+const MAX_SPEED = 50000
 const TURN_SPEED = 3
 
 func _ready() -> void:

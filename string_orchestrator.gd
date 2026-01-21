@@ -34,6 +34,16 @@ func create_string(planet1, planet2) -> void:
 	new_string.root = planet2.root
 	new_string.planet1 = planet1
 	new_string.planet2 = planet2
+	for m_str in strings:
+		print_debug("m str planet 1: ", m_str.planet1)
+		print_debug("m str planet 2: ", m_str.planet2)
+		print_debug("new string planet 1: ", new_string.planet1)
+		print_debug("new string planet 2: ", new_string.planet1)
+		if m_str.planet1 == new_string.planet2 and m_str.planet2 == new_string.planet1:
+			print_debug("got it")
+			new_string.half_sized = true
+			m_str.half_sized = true
+			m_str.queue_redraw()
 	strings.append(new_string)
 	get_parent().add_child.call_deferred(new_string)
 
@@ -48,8 +58,10 @@ func ping_planets(music_string: MusicString):
 					if m_str.planet1 == planet:
 						strings.erase(m_str)
 						m_str.queue_free()
+					if m_str.planet2 == planet:
+						m_str.half_sized = false
+						m_str.queue_redraw()
 			else:
 				for planet2 in planets:
 					if planet2 != planet and planet2.atmosphere_radius + planet.atmosphere_radius >= planet.position.distance_to(planet2.position):
 						create_string(planet,planet2)
-	pass

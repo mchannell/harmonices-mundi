@@ -8,8 +8,6 @@ radius = 0.0
 [node name="Planet" type="Node2D"]
 z_index = 1
 script = ExtResource("1_1odxm")
-is_active = null
-activation_sequence = null
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 

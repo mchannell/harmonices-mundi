@@ -12,206 +12,193 @@ position = Vector2(1035, 287)
 radius = 16
 atmosphere_radius = 32
 root = 4
-is_active = null
-activation_sequence = null
+activation_sequence = Array[int]([0])
 
 [node name="Planet2" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1033, 711)
 radius = 16
 atmosphere_radius = 32
-is_active = null
-activation_sequence = null
+activation_sequence = Array[int]([0])
 
 [node name="Planet3" parent="." instance=ExtResource("1_ycpd1")]
-position = Vector2(1032, 112)
+position = Vector2(1032, 111)
 radius = 24
 atmosphere_radius = 48
 root = 1
-is_active = null
-activation_sequence = null
+is_active = true
+activation_sequence = Array[int]([0])
 
 [node name="Planet4" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1031, 170)
 radius = 16
 atmosphere_radius = 32
 root = 2
-is_active = null
-activation_sequence = null
+activation_sequence = Array[int]([0])
 
 [node name="Planet5" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1034, 227)
 radius = 24
 atmosphere_radius = 48
 root = 3
-is_active = null
-activation_sequence = null
+is_active = true
+activation_sequence = Array[int]([0])
 
 [node name="Planet6" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1032, 341)
 radius = 24
 atmosphere_radius = 48
 root = 5
-is_active = null
-activation_sequence = null
+is_active = true
+activation_sequence = Array[int]([0])
 
 [node name="Planet7" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1032, 666)
 radius = 24
 atmosphere_radius = 48
 root = 11
-is_active = null
-activation_sequence = null
+is_active = true
+activation_sequence = Array[int]([0])
 
 [node name="Planet8" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1031, 614)
 radius = 16
 atmosphere_radius = 32
 root = 10
-is_active = null
-activation_sequence = null
+activation_sequence = Array[int]([0])
 
 [node name="Planet9" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1036, 560)
 radius = 24
 atmosphere_radius = 48
 root = 9
-is_active = null
-activation_sequence = null
+is_active = true
+activation_sequence = Array[int]([0])
 
 [node name="Planet10" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1030, 509)
 radius = 16
 atmosphere_radius = 32
 root = 8
-is_active = null
-activation_sequence = null
+activation_sequence = Array[int]([0])
 
 [node name="Planet11" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1031, 451)
 radius = 24
 atmosphere_radius = 48
 root = 7
-is_active = null
-activation_sequence = null
+is_active = true
+activation_sequence = Array[int]([0])
 
 [node name="Planet12" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1031, 396)
 radius = 16
 atmosphere_radius = 32
 root = 6
-is_active = null
-activation_sequence = null
+activation_sequence = Array[int]([0])
 
 [node name="Planet13" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1093, 289)
 radius = 24
 atmosphere_radius = 48
 root = 4
-is_active = null
-activation_sequence = null
+is_active = true
+activation_sequence = Array[int]([0])
 
 [node name="Planet14" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1095, 710)
 radius = 24
 atmosphere_radius = 48
-is_active = null
-activation_sequence = null
+is_active = true
+activation_sequence = Array[int]([0])
 
 [node name="Planet15" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1094, 111)
 radius = 16
 atmosphere_radius = 32
 root = 1
-is_active = null
-activation_sequence = null
+activation_sequence = Array[int]([0])
 
 [node name="Planet16" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1089, 172)
 radius = 24
 atmosphere_radius = 48
 root = 2
-is_active = null
-activation_sequence = null
+is_active = true
+activation_sequence = Array[int]([0])
 
 [node name="Planet17" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1092, 229)
 radius = 16
 atmosphere_radius = 32
 root = 3
-is_active = null
-activation_sequence = null
+activation_sequence = Array[int]([0])
 
 [node name="Planet18" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1091, 344)
 radius = 16
 atmosphere_radius = 32
 root = 5
-is_active = null
-activation_sequence = null
+activation_sequence = Array[int]([0])
 
 [node name="Planet19" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1094, 665)
 radius = 16
 atmosphere_radius = 32
 root = 11
-is_active = null
-activation_sequence = null
+activation_sequence = Array[int]([0])
 
 [node name="Planet20" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1093, 615)
 radius = 24
 atmosphere_radius = 48
 root = 10
-is_active = null
-activation_sequence = null
+is_active = true
+activation_sequence = Array[int]([0])
 
 [node name="Planet21" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1096, 558)
 radius = 16
 atmosphere_radius = 32
 root = 9
-is_active = null
-activation_sequence = null
+activation_sequence = Array[int]([0])
 
 [node name="Planet22" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1093, 508)
 radius = 24
 atmosphere_radius = 48
 root = 8
-is_active = null
-activation_sequence = null
+is_active = true
+activation_sequence = Array[int]([0])
 
 [node name="Planet23" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1092, 451)
 radius = 16
 atmosphere_radius = 32
 root = 7
-is_active = null
-activation_sequence = null
+activation_sequence = Array[int]([0])
 
 [node name="Planet24" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1093, 397)
 radius = 24
 atmosphere_radius = 48
 root = 6
-is_active = null
-activation_sequence = null
+is_active = true
+activation_sequence = Array[int]([0])
 
 [node name="Planet25" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1032, 764)
 radius = 24
 atmosphere_radius = 48
 root = 1
-is_active = null
-activation_sequence = null
+is_active = true
+activation_sequence = Array[int]([0])
 
 [node name="Planet26" parent="." instance=ExtResource("1_ycpd1")]
 position = Vector2(1094, 763)
 radius = 16
 atmosphere_radius = 32
 root = 1
-is_active = null
-activation_sequence = null
+activation_sequence = Array[int]([0])
 
 [node name="StringOrchestrator" parent="." instance=ExtResource("2_x2dom")]
 position = Vector2(2, 0)
